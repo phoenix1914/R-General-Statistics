@@ -2,11 +2,13 @@ library(rethinking)
 library(ggplot2)
 library(reshape2)
 
-pos <-replicate(1000,sum(runif(16,-1,1)))
-hist(pos) + plot(density(pos))
+pos <-replicate(100,sum(runif(16,-1,1)))
+hist(pos)
+plot(density(pos))
+
 {
 n <- 1000
-steps <- 34
+steps <- 50
 
 my_df <- data.frame(matrix(0, ncol = n, nrow = 16))
 
