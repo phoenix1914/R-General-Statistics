@@ -9,7 +9,7 @@ s_posterior <- sum(posterior)
 posterior <- posterior / sum (posterior)
 
 dens(posterior)
-
+plot(posterior)
 
 # definegrid
 p_grid <-seq(from=0,to=1,length.out=20)
